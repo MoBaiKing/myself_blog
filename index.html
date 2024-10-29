@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>深度学习博客 - DYL</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- 首页 -->
+<section id="home">
+  <div class="overlay"></div> <!-- 动态雾层 -->
+  <div class="welcome-text">
+    <h1>Hello, I’m DYL</h1>
+    <p id="typing"><span id="typing-text"></span><span class="blinking-cursor">|</span></p>
+  </div>
+
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <a href="#home">主页</a>
+    <a href="#about">关于我</a>
+    <a href="#competitions">竞赛经历</a>
+    <a href="#notes">笔记</a>
+    <a href="#scenery">沿途风景</a>
+    <a href="#contact">联系我</a>
+    <a href="#goals">我的目标</a>
+    <a href="#projects">项目经历</a>
+    <a href="#section-title">弹幕墙</a>
+
+  </nav>
+</section>
+
+<!-- 关于我 -->
+<section id="about-me" class="about-card">
+  <h2 class="about-title">Who am I?</h2>
+  <p class="about-description">我是DYL，一名深度学习和人工智能的探索者，对未来科技有着无尽的热情。</p>
+</section>
+
+
+<section id="about" class="glass-card">
+  <!-- 学习技能 -->
+  <div class="skills">
+    <h3>学习技能</h3>
+    <div class="skill">
+      <span class="skill-name">Python(Pytorch)</span>
+      <div class="progress-bar">
+        <div class="progress" style="width: 57%;">
+          <div class="wave"></div>
+        </div>
+      </div>
+    </div>
+    <div class="skill">
+      <span class="skill-name">机器学习(基于sklearn)</span>
+      <div class="progress-bar">
+        <div class="progress" style="width: 62%;">
+          <div class="wave"></div>
+        </div>
+      </div>
+    </div>
+    <div class="skill">
+      <span class="skill-name">深度学习(CV初学者)</span>
+      <div class="progress-bar">
+        <div class="progress" style="width: 35%;">
+          <div class="wave"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 兴趣爱好 -->
+  <div class="interests">
+    <h3>兴趣爱好</h3>
+    <div class="interest-cards">
+      <div class="interest-card">
+        <span class="icon">👨‍💻🇨</span>
+        <p>程序设计<br>(全是省奖只能算兴趣爱好了)</p>
+      </div>
+      <div class="interest-card">
+        <span class="icon">🏊︎🏊️</span>
+        <p>游泳</p>
+      </div>
+      <div class="interest-card">
+        <span class="icon">💡🎬</span>
+        <p>电影观赏者</p>
+      </div>
+      <div class="interest-card">
+        <span class="icon">🍣🍱</span>
+        <p>美食狂热者</p>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- 竞赛经历 -->
+  <section id="competitions">
+    <h2>竞赛经历</h2>
+    <div class="competition-cards" id="competition-cards"></div>
+
+    <!-- 等待加载动画 -->
+    <div class="loading">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <div class="loading">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+<!-- 启蒙笔记 -->
+<section id="notes">
+  <h2>启蒙笔记(待补充)</h2>
+  <div class="note-cards">
+    <div class="note-card">
+      <div class="note-content">
+        <h3 align="center">卷积神经网络入门</h3>
+        <p>介绍卷积神经网络的基本概念与实际应用，深入理解CNN的构成与作用。</p>
+      </div>
+      <a href="cnn-intro.pdf" download class="download-btn">
+        <span class="icon">📄</span> 下载 PDF
+      </a>
+    </div>
+
+    <div class="note-card">
+      <div class="note-content">
+        <h3 align="center">深度学习中的优化算法</h3>
+        <p>从梯度下降到Adam优化算法的深入分析，帮助理解各种优化算法的优缺点。</p>
+      </div>
+      <a href="deep-learning-optimization.pdf" download class="download-btn">
+        <span class="icon">📄</span> 下载 PDF
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- 沿途风景模块 -->
+  <section id="scenery">
+    <h2>沿途风景</h2>
+    <div class="scenery-wall" id="scenery-wall">
+      <!-- 动态插入图片 -->
+    </div>
+    <!-- 数字雨特效 -->
+    <div class="digital-rain" id="digital-rain"></div>
+  </section>
+
+
+  <!-- 联系我 -->
+  <section id="contact" class="glass-card">
+    <h2>联系我</h2>
+    <p>通过以下方式找到我：</p>
+    <ul class="contact-info">
+      <li><span class="icon">📧</span> 邮箱：<a href="mailto:dyl771215@gmail.com" target="_blank">dyl771215@gmail.com</a></li>
+      <li><span class="icon">🌐</span> QQ：1849812973</li>
+<!--      <li><span class="icon">💼</span> LinkedIn：<a href="https://linkedin.com/in/dyl" target="_blank">linkedin.com/in/dyl</a></li>-->
+<!--      <li><span class="icon">🐙</span> GitHub：<a href="https://github.com/dyl" target="_blank">github.com/dyl</a></li>-->
+    </ul>
+  </section>
+
+<!-- 我的目标 -->
+<section id="goals">
+  <h2>我的目标</h2>
+  <div class="goal-map">
+    <!-- 第一条学习路径 -->
+    <div class="goal-node" data-status="completed">Python 基础</div>
+    <div class="goal-line"></div>
+    <div class="goal-node" data-status="completed">数据清洗</div>
+    <div class="goal-line"></div>
+    <div class="goal-node" data-status="completed">机器学习基础</div>
+    <div class="goal-line"></div>
+    <div class="goal-node" data-status="completed">神经网络基础</div>
+    计算机视觉部分
+    <!-- 分支1：计算机视觉方向 -->
+<!--    <div class="goal-line goal-line-branch"></div>-->
+    <div class="goal-node" data-status="in-progress">经典卷积神经网络</div>
+    <div class="goal-line"></div>
+
+    <div class="goal-node" data-status="in-progress">图像分类</div>
+    <div class="goal-line"></div>
+    <div class="goal-node" data-status="in-progress">目标检测</div>
+
+
+    <!-- 分支2：自然语言处理方向 -->
+    <div class="goal-line"></div>
+    自然语言处理方向
+    <div class="goal-node" data-status="not-started">NLP基础</div>
+
+    <div class="goal-line"></div>
+    <div class="goal-node" data-status="not-started">循环神经网络</div>
+    <!-- 主线继续 -->
+    <div class="goal-line"></div>
+    <div class="goal-node" data-status="not-started">Transformers神经网络</div>
+    <div class="goal-line"></div>
+    综合能力
+    <div class="goal-node" data-status="completed">驾照</div>
+
+    <div class="goal-line"></div>
+    <div class="goal-node" data-status="completed">CET4</div>
+    <!-- 主线继续 -->
+    <div class="goal-line"></div>
+    <div class="goal-node" data-status="in-progress">CET6</div>
+  </div>
+  <!-- 项目经历模块 -->
+  <section id="projects">
+    <h2 class="section-title">项目经历</h2>
+    <div class="project-cards" id="project-cards"></div> <!-- 动态插入项目内容 -->
+  </section>
+  <!-- 页脚 -->
+  <h2 class="section-title">弹幕墙</h2>
+  <footer id="footer">
+    <div id="quote-container"></div> <!-- 动态插入名人名言的弹幕 -->
+  </footer>
+
+</section>
+<script src="js/script.js"></script>
+</section>
+
+</head>
+
+</body>
+</html>
